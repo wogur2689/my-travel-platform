@@ -2,5 +2,5 @@
 ## 여행지 정보 플랫폼
 - 서비스 지역 : 여수
 - 기술 스택 ->
-  - 사용자 : Spring Boot + JSP
-  - 관리자 : Spring Boot + JSP
+  - 사용자 : Spring Boot + Thymeleaf
+  - 관리자 : Spring Boot + Thymeleaf
