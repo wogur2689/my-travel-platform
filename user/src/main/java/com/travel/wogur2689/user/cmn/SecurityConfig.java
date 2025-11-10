@@ -23,12 +23,12 @@ public class SecurityConfig {
                 .formLogin(form -> form
                         .loginPage("/pub/login")       // 로그인 페이지
                         .loginProcessingUrl("/pub/loginProc")
-                        .defaultSuccessUrl("/pri/home", true)
+                        .defaultSuccessUrl("/pub/home", true)
                         .permitAll()
                 )
                 .logout(logout -> logout
-                        .logoutUrl("/pri/logout")
-                        .logoutSuccessUrl("/pub/login?logout")
+                        .logoutUrl("/app/logout")
+                        .logoutSuccessUrl("/app/login?logout")
                 );
 
         return http.build();

@@ -1,4 +1,4 @@
-package com.travel.wogur2689.user.pub;
+package com.travel.wogur2689.user.app;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PageController {
 
     @GetMapping("/")
-    public String homePage() {
-        return "index";
+    public String mainPage() {
+        return "main";
     }
 
     @GetMapping("/login")
