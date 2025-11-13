@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 여행 플랫폼</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
     <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-
+<!-- 히어로 배너 -->
+<section id="hero">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>나의 여행 플랫폼</h1>
+            <p>한국을 함께 즐기는 여행</p>
+        </div>
+    </div>
+</section>
 <section id="regions-slider">
     <h3>여행 지역 선택</h3>
     <div class="slider-container">
@@ -143,6 +152,35 @@
         <button class="slider-btn prev">&#10094;</button>
         <button class="slider-btn next">&#10095;</button>
     </div>
+</section>
+
+<!-- 추천 코스 -->
+<section id="recommend">
+    <h3>추천 코스</h3>
+    <div class="recommend-list">
+        <div class="recommend-item">
+            <img th:src="@{/images/yeosu/odongdo.jpg}" alt="오동도"/>
+            <p>오동도 동백꽃길 산책</p>
+        </div>
+        <div class="recommend-item">
+            <img th:src="@{/images/yeosu/cablecar.jpg}" alt="케이블카"/>
+            <p>해상케이블카 체험</p>
+        </div>
+        <div class="recommend-item">
+            <img th:src="@{/images/yeosu/nightsea.jpg}" alt="밤바다"/>
+            <p>밤바다 야경</p>
+        </div>
+    </div>
+</section>
+
+<!-- 여행 팁 -->
+<section id="tips">
+    <h3>여수 여행 팁</h3>
+    <ul>
+        <li>주말엔 오동도 방문 시 일찍 출발!</li>
+        <li>해상케이블카 예약 필수</li>
+        <li>밤바다 산책로 추천</li>
+    </ul>
 </section>
 
 <footer id="contact">
