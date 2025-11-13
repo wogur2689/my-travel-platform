@@ -1,0 +1,112 @@
+/* 섹션 배경 */
+#regions-slider {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1E88E5 0%, #7E57C2 100%);
+    color: white;
+    position: relative;
+}
+
+/* 슬라이더 컨테이너 */
+.slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+/* 전체 카드 컨테이너 */
+.slider-wrapper {
+    display: flex;
+    gap: 1.5rem;      /* 카드 간격 */
+    overflow-x: auto; /* 가로 스크롤 가능 */
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+/* 카드 아이템 */
+.cards_item {
+    flex: 0 0 280px;   /* 고정 폭 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 카드 내부 */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* 카드 이미지 */
+.card_image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* 비율 유지 */
+}
+
+/* 카드 내용 */
+.card_content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card_title {
+    color: #1E88E5;
+    margin-bottom: 0.5rem;
+}
+
+.card_text {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* 버튼 */
+.card_btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #7E57C2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card_btn:hover {
+    background-color: #5E35B1;
+}
+
+/* 좌우 슬라이더 버튼 */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .cards_item {
+        flex: 0 0 200px;
+    }
+}

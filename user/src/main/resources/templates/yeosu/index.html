@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여수 여행 | 바다와 낭만의 도시</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">Yeosu Travel</div>
+        <ul class="nav-links">
+            <li><a href="#intro">소개</a></li>
+            <li><a href="#spots">명소</a></li>
+            <li><a href="#food">맛집</a></li>
+            <li><a href="#contact">문의</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>여수, 바다와 낭만의 도시</h1>
+        <p>푸른 바다와 보랏빛 노을이 어우러진 아름다운 여수</p>
+        <a href="#spots" class="btn">여행 시작하기</a>
+    </div>
+</section>
+
+<section id="intro">
+    <h2>여수를 소개합니다</h2>
+    <p>
+        여수는 한려수도의 시작점으로, 섬과 바다가 만들어내는 자연의 조화가 돋보이는 해양 관광 도시입니다.
+        <br>낭만 가득한 밤바다, 케이블카, 오동도 등 다양한 볼거리로 가득합니다.
+    </p>
+</section>
+
+<section id="spots">
+    <h2>주요 명소</h2>
+    <div class="spot-list">
+        <div class="spot-item" th:each="spot : ${spots}">
+            <img th:src="@{${spot.imageUrl}}" th:alt="${spot.name}">
+            <h3 th:text="${spot.name}">오동도</h3>
+            <p th:text="${spot.desc}">봄에는 동백꽃이 아름답게 피는 섬</p>
+        </div>
+    </div>
+</section>
+
+<section id="food">
+    <h2>여수 맛집</h2>
+    <div class="food-list">
+        <div class="food-item" th:each="food : ${foods}">
+            <img th:src="@{${food.imageUrl}}" th:alt="${food.name}">
+            <h3 th:text="${food.name}">게장백반</h3>
+            <p th:text="${food.desc}">간장게장과 전어회로 유명한 여수의 별미</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2025 Yeosu Travel. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

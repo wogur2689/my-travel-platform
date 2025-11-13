@@ -1,11 +1,153 @@
-<!doctype html>
-<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>여행</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 여행 플랫폼</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-    <h1>하이</h1>
+
+<section id="regions-slider">
+    <h3>여행 지역 선택</h3>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img th:src="@{/images/yeosu/yeosu_logo.png}" alt="여수"/>
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">여수</h2>
+                        <p class="card_text">여수 여행 소개</p>
+                        <button class="btn card_btn">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 좌우 화살표 -->
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2025 My Travel. All Rights Reserved.</p>
+</footer>
+<script th:src="@{/js/main.js}"></script>
 </body>
 </html>
