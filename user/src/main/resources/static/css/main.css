@@ -15,10 +15,16 @@
 /* 전체 카드 컨테이너 */
 .slider-wrapper {
     display: flex;
-    gap: 1.5rem;      /* 카드 간격 */
-    overflow-x: auto; /* 가로 스크롤 가능 */
+    gap: 3.7rem;      /* 카드 간격 */
+    overflow-x: hidden; /* 가로 스크롤 가능 */
     padding-bottom: 1rem;
     scroll-behavior: smooth;
+    margin : 0 100px;
+    cursor: grab;
+}
+
+.slider-wrapper:active {
+    cursor: grabbing;
 }
 
 /* 카드 아이템 */
