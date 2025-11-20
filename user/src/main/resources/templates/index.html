@@ -154,37 +154,19 @@
     </div>
 </section>
 
-<!-- 추천 코스 -->
-<section id="recommend">
-    <h3>추천 코스</h3>
-    <div class="recommend-list">
-        <div class="recommend-item">
-            <img th:src="@{/images/yeosu/odongdo.jpg}" alt="오동도"/>
-            <p>오동도 동백꽃길 산책</p>
-        </div>
-        <div class="recommend-item">
-            <img th:src="@{/images/yeosu/cablecar.jpg}" alt="케이블카"/>
-            <p>해상케이블카 체험</p>
-        </div>
-        <div class="recommend-item">
-            <img th:src="@{/images/yeosu/nightsea.jpg}" alt="밤바다"/>
-            <p>밤바다 야경</p>
-        </div>
-    </div>
-</section>
-
-<!-- 여행 팁 -->
-<section id="tips">
-    <h3>여수 여행 팁</h3>
-    <ul>
-        <li>주말엔 오동도 방문 시 일찍 출발!</li>
-        <li>해상케이블카 예약 필수</li>
-        <li>밤바다 산책로 추천</li>
-    </ul>
-</section>
-
 <footer id="contact">
-    <p>© 2025 My Travel. All Rights Reserved.</p>
+    <div class="footer-content">
+        <h3>My Travel</h3>
+        <p>여행이 즐거워지는 플랫폼</p>
+
+        <ul class="footer-links">
+            <li><a href="#regions">지역 소개</a></li>
+            <li><a href="#tours">투어 안내</a></li>
+            <li><a href="#contact">문의하기</a></li>
+        </ul>
+
+        <p class="footer-copy">© 2025 My Travel. All Rights Reserved.</p>
+    </div>
 </footer>
 <script th:src="@{/js/main.js}"></script>
 </body>
