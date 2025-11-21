@@ -46,3 +46,10 @@ slider.addEventListener('touchmove', (e) => {
     const walk = startX - x;
     slider.scrollLeft = scrollLeft + walk;
 });
+
+/**
+ * 페이지 이동
+ */
+function pageMove(city) {
+    location.href = '/' + city;
+}

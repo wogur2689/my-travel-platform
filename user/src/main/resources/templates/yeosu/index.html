@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여수 여행 | 바다와 낭만의 도시</title>
-    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/common.css}">
 </head>
 <body>
 
@@ -60,8 +60,19 @@
 </section>
 
 <footer id="contact">
-    <p>© 2025 Yeosu Travel. All Rights Reserved.</p>
-</footer>
+    <div class="footer-content">
+        <h3>My Travel</h3>
+        <p>여행이 즐거워지는 플랫폼</p>
 
+        <ul class="footer-links">
+            <li><a href="#regions">지역 소개</a></li>
+            <li><a href="#tours">투어 안내</a></li>
+            <li><a href="#contact">문의하기</a></li>
+        </ul>
+
+        <p class="footer-copy">© 2025 My Travel. All Rights Reserved.</p>
+    </div>
+</footer>
+<script th:src="@{/js/common.js}"></script>
 </body>
 </html>
