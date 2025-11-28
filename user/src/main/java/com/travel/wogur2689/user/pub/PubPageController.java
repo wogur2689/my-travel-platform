@@ -19,4 +19,9 @@ public class PubPageController {
     public String cityPage(@PathVariable String city) {
         return city + "/index";
     }
+
+    @GetMapping("/{city}/intro")
+    public String intro(@PathVariable String city) {
+        return city + "/intro";
+    }
 }
