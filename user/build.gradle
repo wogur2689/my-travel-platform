@@ -46,8 +46,8 @@ dependencies {
 	//	testImplementation 'org.springframework.security:spring-security-test'
 
 	//db
-	runtimeOnly 'com.mysql:mysql-connector-j' //local
-	runtimeOnly 'com.h2database:h2'			  //dev, prod
+	runtimeOnly 'com.h2database:h2'			  //local
+	runtimeOnly 'com.mysql:mysql-connector-j' //dev, prod
 }
 
 tasks.named('test') {
